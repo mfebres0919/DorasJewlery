@@ -1,0 +1,990 @@
+* {
+    font-family: "Unna", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: #fcf8f1;
+}
+
+
+
+@media (min-width: 1280px) {
+    .navbar-container {
+        display: flex;
+        justify-content: center;
+        /* border: 5px solid red; */
+        background-color: #dfcbb8;
+    }
+    
+    .navbar-container ul {
+        display: flex;
+        gap: 50px;
+        list-style: none;
+        /* border: 5px solid blue; */
+        margin: 30px;
+        padding: 0;
+    }
+    
+    .navbar-container a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        font-size: 35px;
+    }
+    
+    
+    /* FIRST SECTION */
+    .section1 {
+        /* border: 5px solid yellow; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        margin: 0;
+    }
+    
+    .section1 h1, p{
+        text-align: center;
+    }
+    
+    .section1 h1{
+       font-weight: bold;
+       font-size: 45px;
+       /* border: 5px solid blue; */
+    }
+    
+    .section1 p{
+        text-align: center;
+        font-size: 35px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .jewl-span, .acc-span {
+        color:#704f36;
+    }
+    
+    .images1-container {
+        display: flex;
+        justify-content: center; /* Optional: Centers the images horizontally */
+        flex-direction: column;
+    }
+    
+    
+    .custom-hr {
+        width: 90%;  /* Adjust the width to control the length of the line */
+        margin: 10px auto;  /* Centers the line and adds space above and below */
+        border: 1px solid #000000;  /* Sets the color and thickness of the line */
+    }
+    
+    .images1-container {
+        flex-direction: row; /* Images sit side by side */
+        justify-content: center; /* Center images horizontally */
+        flex-wrap: wrap; /* Allow wrapping if needed */
+        gap: 70px; /* Adjust space between images */
+    }
+    
+    
+    .images1-container img {
+        width: 15%; /* Adjusts the width of the image */
+        max-width: 100%; /* Ensures the image can never be larger than its container */
+        height: auto; /* Ensures the height adjusts automatically based on the width */
+        border-radius: 20px; /* Adds rounded corners */
+        margin: 20px; /* Adds space around the image */
+        border: 3px solid rgb(0, 0, 0); /* Adds a border */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    }
+    
+    /* Hover Effect */
+    .images1-container img:hover {
+        transform: scale(1.05); /* Slightly enlarge the image on hover */
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+    }
+    
+    
+    
+    /* MY STORY SECTION */
+    .mystory-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* border: 5px solid blue; */
+        margin: 20px;
+    }
+    
+    .mystory-h1p {
+        display: flex;
+        flex: column;
+        justify-content: center;
+    }
+    
+    .mystory-container h1,p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .mystory-container p {
+       font-size: 35px;
+    }
+    
+    
+    .mystory-container h1 {
+        font-weight: bold;
+        font-size: 70px;
+    }
+    
+    
+    
+    .mystory-h1p {
+        flex: 1;
+        display: flex;
+        flex-direction: column; /* Stack h1 and p vertically */
+        gap: 10px; /* Add space between h1 and p */
+    }
+    
+    .mystory-h1p h1 {
+        text-align: center;
+    }
+    
+    
+    
+    
+    .mystory-container img {
+        width: 25%; /* Adjusts the width of the image to 80% of the container */
+        max-width: 100%; /* Ensures the image can never be larger than its container */
+        height: auto; /* Ensures the height adjusts automatically based on the width */
+        border-radius: 20px; /* Adds rounded corners */
+        margin: 20px; /* Adds space around the image */
+        border: 3px solid rgb(0, 0, 0); /* Adds a border */
+    }
+    
+    
+    
+    /* EXAMPLES SECTION */
+    
+    .examples-container {
+        display: flex;
+        flex-wrap: wrap; /* Ensures images wrap to a new row if needed */
+        gap: 20px; /* Adds spacing between images */
+        justify-content: center; /* Centers the content */
+    }
+    
+    
+    .cus-h2-container h2 {
+        font-weight: bold;
+        font-size: 45px;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .closer-span {
+        color: #704f36;
+    }
+    
+    .examples-container img{
+        width: 15%; /* Adjusts the width of the image to 80% of the container */
+        max-width: 100%; /* Ensures the image can never be larger than its container */
+        height: auto; /* Ensures the height adjusts automatically based on the width */
+        border-radius: 20px; /* Adds rounded corners */
+        margin: 20px; /* Adds space around the image */
+        border: 3px solid rgb(0, 0, 0); /* Adds a border */
+    }
+    
+    
+    .reviews-h1 h1 {
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .loved-span {
+        color: #704f36;
+    }
+    
+
+    .examples-container img {
+        width: 15%; /* Adjusts the width of the image */
+        max-width: 100%; /* Ensures the image never exceeds its container */
+        height: auto; /* Maintains the aspect ratio */
+        border-radius: 20px; /* Adds rounded corners */
+        margin: 20px; /* Adds space around the image */
+        border: 3px solid rgb(0, 0, 0); /* Adds a border */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    }
+    
+    /* Hover Effect */
+    .examples-container img:hover {
+        transform: scale(1.05); /* Slightly enlarges the image */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow effect */
+    }
+    
+    /* RATINGS SECTION */
+    /* Reviews Card Styling */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+}
+
+    
+    
+    /* END OF WEBSITE */
+    .connected-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .connected-container h1,p {
+        text-align: center;
+        margin: 20px;
+    }
+    
+    .connected-container h1 {
+        font-weight: bold;
+        font-size: 45px;
+    }
+    
+    
+    .connected-container p {
+        font-size: 25px;
+        max-width: 700px;
+    }
+    
+    
+    .ddj-span {
+        font-weight: bold;
+        color: #704f36;
+    }
+    
+    .socialm-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .socialm-container h5{
+        /* border: 4px solid blue; */
+        margin: 12px;
+    }
+
+    .socialm-container h5{
+        font-size: 25px;
+    }
+    
+
+}
+
+@media (max-width: 1281px) {
+    
+    .navbar-container {
+        display: flex;
+        justify-content: center;
+        /* border: 5px solid red; */
+        background-color: #dfcbb8;
+    }
+    
+    .navbar-container ul {
+        display: flex;
+        gap: 50px;
+        list-style: none;
+        /* border: 5px solid blue; */
+        margin: 30px;
+        padding: 0;
+    }
+    
+    .navbar-container a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        font-size: 35px;
+    }
+    
+    
+    /* FIRST SECTION */
+    .section1 {
+        /* border: 5px solid yellow; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        margin: 0;
+    }
+    
+    .section1 h1, p{
+        text-align: center;
+    }
+    
+    .section1 h1{
+       font-weight: bold;
+       font-size: 45px;
+       /* border: 5px solid blue; */
+    }
+    
+    .section1 p{
+        text-align: center;
+        font-size: 25px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .jewl-span, .acc-span {
+        color:#704f36;
+    }
+    
+    .images1-container {
+        display: flex;
+        justify-content: center; /* Optional: Centers the images horizontally */
+        flex-direction: column;
+    }
+    
+    
+    .custom-hr {
+        width: 90%;  /* Adjust the width to control the length of the line */
+        margin: 10px auto;  /* Centers the line and adds space above and below */
+        border: 1px solid #000000;  /* Sets the color and thickness of the line */
+    }
+    
+    .images1-container {
+        flex-direction: row; /* Images sit side by side */
+        justify-content: center; /* Center images horizontally */
+        flex-wrap: wrap; /* Allow wrapping if needed */
+        gap: 10px; /* Adjust space between images */
+    }
+    
+    
+    .images1-container img {
+        width: 15%; /* Adjusts the width of the image to 80% of the container */
+        max-width: 100%; /* Ensures the image can never be larger than its container */
+        height: auto; /* Ensures the height adjusts automatically based on the width */
+        border-radius: 20px; /* Adds rounded corners */
+        margin: 20px; /* Adds space around the image */
+        border: 3px solid rgb(0, 0, 0); /* Adds a border */
+    }
+    
+    /* Hover Effect */
+    .images1-container img:hover {
+        transform: scale(1.05); /* Slightly enlarge image on hover */
+    }
+    
+    
+    /* MY STORY SECTION */
+    .mystory-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* border: 5px solid blue; */
+        margin: 20px;
+    }
+    
+    .mystory-h1p {
+        display: flex;
+        flex: column;
+        justify-content: center;
+    }
+    
+    .mystory-container h1,p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .mystory-container p {
+       font-size: 25px;
+    }
+    
+    
+    .mystory-container h1 {
+        font-weight: bold;
+        font-size: 70px;
+    }
+    
+    
+    
+    .mystory-h1p {
+        flex: 1;
+        display: flex;
+        flex-direction: column; /* Stack h1 and p vertically */
+        gap: 10px; /* Add space between h1 and p */
+    }
+    
+    .mystory-h1p h1 {
+        text-align: center;
+    }
+    
+    
+    
+    
+    .mystory-container img {
+        width: 25%; /* Adjusts the width of the image to 80% of the container */
+        max-width: 100%; /* Ensures the image can never be larger than its container */
+        height: auto; /* Ensures the height adjusts automatically based on the width */
+        border-radius: 20px; /* Adds rounded corners */
+        margin: 20px; /* Adds space around the image */
+        border: 3px solid rgb(0, 0, 0); /* Adds a border */
+    }
+    
+    
+    
+    /* EXAMPLES SECTION */
+    
+    .examples-container {
+        display: flex;
+        flex-wrap: wrap; /* Ensures images wrap to a new row if needed */
+        gap: 20px; /* Adds spacing between images */
+        justify-content: center; /* Centers the content */
+    }
+    
+    
+    .cus-h2-container h2 {
+        font-weight: bold;
+        font-size: 45px;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .closer-span {
+        color: #704f36;
+    }
+    
+    .examples-container img{
+        width: 15%; /* Adjusts the width of the image to 80% of the container */
+        max-width: 100%; /* Ensures the image can never be larger than its container */
+        height: auto; /* Ensures the height adjusts automatically based on the width */
+        border-radius: 20px; /* Adds rounded corners */
+        margin: 20px; /* Adds space around the image */
+        border: 3px solid rgb(0, 0, 0); /* Adds a border */
+    }
+    
+    
+    .reviews-h1 h1 {
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .loved-span {
+        color: #704f36;
+    }
+    
+    /* RATINGS SECTION */
+    
+    
+    
+    /* END OF WEBSITE */
+    .connected-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .connected-container h1,p {
+        text-align: center;
+        margin: 20px;
+    }
+    
+    .connected-container h1 {
+        font-weight: bold;
+        font-size: 45px;
+    }
+    
+    
+    .connected-container p {
+        font-size: 25px;
+        max-width: 700px;
+    }
+    
+    
+    .ddj-span {
+        font-weight: bold;
+        color: #704f36;
+    }
+    
+    .socialm-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .socialm-container h5{
+        /* border: 4px solid blue; */
+        margin: 12px;
+    }
+
+    .socialm-container h5{
+        font-size: 25px;
+    }
+    }
+
+@media (max-width: 780px) {
+
+   /* NAVBAR SECTION */
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    /* border: 5px solid red; */
+    background-color: #dfcbb8;
+}
+
+.navbar-container ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    /* border: 5px solid blue; */
+    margin: 30px;
+    padding: 0;
+}
+
+.navbar-container a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+}
+
+
+/* FIRST SECTION */
+.section1 {
+    /* border: 5px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 0;
+}
+
+.section1 h1, p{
+    text-align: center;
+}
+
+.section1 h1{
+   font-weight: bold;
+   font-size: 45px;
+   /* border: 5px solid blue; */
+}
+
+.section1 p{
+    text-align: center;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.jewl-span, .acc-span {
+    color:#704f36;
+}
+
+
+
+.images1-container {
+    flex-direction: row; /* Images sit side by side */
+    justify-content: center; /* Center images horizontally */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    gap: 10px; /* Adjust space between images */
+}
+
+
+.images1-container img {
+    width: 25%; /* Adjusts the width of the image to 80% of the container */
+    max-width: 100%; /* Ensures the image can never be larger than its container */
+    height: auto; /* Ensures the height adjusts automatically based on the width */
+    border-radius: 20px; /* Adds rounded corners */
+    margin: 20px; /* Adds space around the image */
+    border: 3px solid rgb(0, 0, 0); /* Adds a border */
+}
+
+/* Hover Effect */
+.images1-container img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+.custom-hr {
+    width: 90%;  /* Adjust the width to control the length of the line */
+    margin: 10px auto;  /* Centers the line and adds space above and below */
+    border: 1px solid #000000;  /* Sets the color and thickness of the line */
+}
+
+
+
+/* MY STORY SECTION */
+.mystory-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 5px solid blue; */
+    margin: 20px;
+}
+
+.mystory-h1p {
+    display: flex;
+    flex: column;
+    justify-content: center;
+}
+
+.mystory-container h1,p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.mystory-container p {
+   font-size: 20px;
+}
+
+
+.mystory-container h1 {
+    font-weight: bold;
+}
+
+
+
+.mystory-h1p {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Stack h1 and p vertically */
+    gap: 10px; /* Add space between h1 and p */
+}
+
+.mystory-h1p h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+
+
+
+.mystory-container img {
+    width: 30%; /* Adjusts the width of the image to 80% of the container */
+    max-width: 100%; /* Ensures the image can never be larger than its container */
+    height: auto; /* Ensures the height adjusts automatically based on the width */
+    border-radius: 20px; /* Adds rounded corners */
+    margin: 20px; /* Adds space around the image */
+    border: 3px solid rgb(0, 0, 0); /* Adds a border */
+}
+
+
+
+/* EXAMPLES SECTION */
+
+.examples-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures images wrap to a new row if needed */
+    gap: 20px; /* Adds spacing between images */
+    justify-content: center; /* Centers the content */
+}
+
+
+.cus-h2-container h2 {
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    padding: 20px;
+}
+
+.closer-span {
+    color: #704f36;
+}
+
+.examples-container img{
+    width: 30%; /* Adjusts the width of the image to 80% of the container */
+    max-width: 100%; /* Ensures the image can never be larger than its container */
+    height: auto; /* Ensures the height adjusts automatically based on the width */
+    border-radius: 20px; /* Adds rounded corners */
+    margin: 20px; /* Adds space around the image */
+    border: 3px solid rgb(0, 0, 0); /* Adds a border */
+}
+
+
+.reviews-h1 h1 {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.loved-span {
+    color: #704f36;
+}
+
+/* RATINGS SECTION */
+
+
+/* END OF WEBSITE */
+.connected-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.connected-container h1,p {
+    text-align: center;
+    margin: 20px;
+}
+
+.connected-container h1 {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+
+.connected-container p {
+    font-size: 20px;
+}
+
+
+.ddj-span {
+    font-weight: bold;
+    color: #704f36;
+}
+
+.socialm-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.socialm-container h5{
+    /* border: 4px solid blue; */
+    margin: 10px;
+}
+}
+    
+
+@media (max-width: 515px) {
+ /* NAVBAR SECTION */
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    /* border: 5px solid red; */
+    background-color: #dfcbb8;
+}
+
+.navbar-container ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    /* border: 5px solid blue; */
+    margin: 30px;
+    padding: 0;
+}
+
+.navbar-container a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+}
+
+
+/* FIRST SECTION */
+.section1 {
+    /* border: 5px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 0;
+}
+
+.section1 h1, p{
+    text-align: center;
+}
+
+.section1 h1{
+   font-weight: bold;
+   font-size: 45px;
+   /* border: 5px solid blue; */
+}
+
+.section1 p{
+    text-align: center;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.jewl-span, .acc-span {
+    color:#704f36;
+}
+
+.images1-container {
+    display: flex;
+    justify-content: center; /* Optional: Centers the images horizontally */
+    flex-direction: column;
+}
+
+
+.custom-hr {
+    width: 90%;  /* Adjust the width to control the length of the line */
+    margin: 10px auto;  /* Centers the line and adds space above and below */
+    border: 1px solid #000000;  /* Sets the color and thickness of the line */
+}
+
+.images1-container  {
+    /* border: 5px solid blue; */
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.images1-container img {
+    width: 45%; /* Adjusts the width of the image to 80% of the container */
+    max-width: 100%; /* Ensures the image can never be larger than its container */
+    height: auto; /* Ensures the height adjusts automatically based on the width */
+    border-radius: 20px; /* Adds rounded corners */
+    margin: 20px; /* Adds space around the image */
+    border: 3px solid rgb(0, 0, 0); /* Adds a border */
+}
+
+/* MY STORY SECTION */
+.mystory-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+}
+
+.mystory-h1p {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Stack h1 and p vertically */
+    gap: 10px; /* Add space between h1 and p */
+}
+
+.mystory-h1p h1 {
+    text-align: center;
+}
+
+.mystory-section .mystory-h1p p {
+    font-size: 20px; /* Adjust the size to your preference */
+    line-height: 1.6; /* Optional: Adjust line height for better readability */
+    color: #333; /* Optional: Adjust color if needed */
+}
+
+
+.mystory-container img {
+    order: 2; /* Push the image to the bottom */
+    max-width: 80%; /* Adjust image size for small screens */
+}
+
+
+.mystory-container img {
+    width: 45%; /* Adjusts the width of the image to 80% of the container */
+    max-width: 100%; /* Ensures the image can never be larger than its container */
+    height: auto; /* Ensures the height adjusts automatically based on the width */
+    border-radius: 20px; /* Adds rounded corners */
+    margin: 20px; /* Adds space around the image */
+    border: 3px solid rgb(0, 0, 0); /* Adds a border */
+}
+
+
+
+/* EXAMPLES SECTION */
+
+.examples-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures images wrap to a new row if needed */
+    gap: 20px; /* Adds spacing between images */
+    justify-content: center; /* Centers the content */
+}
+
+
+.cus-h2-container h2 {
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    padding: 20px;
+}
+
+.closer-span {
+    color: #704f36;
+}
+
+.examples-container img{
+    width: 35%; /* Adjusts the width of the image to 80% of the container */
+    max-width: 100%; /* Ensures the image can never be larger than its container */
+    height: auto; /* Ensures the height adjusts automatically based on the width */
+    border-radius: 20px; /* Adds rounded corners */
+    margin: 20px; /* Adds space around the image */
+    border: 3px solid rgb(0, 0, 0); /* Adds a border */
+}
+
+
+.reviews-h1 h1 {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.loved-span {
+    color: #704f36;
+}
+
+/* RATINGS SECTION */
+
+
+
+/* END OF WEBSITE */
+.connected-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.connected-container h1,p {
+    text-align: center;
+    margin: 20px;
+}
+
+.connected-container h1 {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+
+.connected-container p {
+    font-size: 20px;
+}
+
+
+.ddj-span {
+    font-weight: bold;
+    color: #704f36;
+}
+
+.socialm-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.socialm-container h5{
+    /* border: 4px solid blue; */
+    margin: 10px;
+}
+}
